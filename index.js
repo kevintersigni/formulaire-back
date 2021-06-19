@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/form", (req, res) => {
-  //   console.log(req.fields);
+  console.log(req.fields);
 
   const data = {
     from: `${req.fields.firstname} ${req.fields.lastname} <${req.fields.email}>`,
