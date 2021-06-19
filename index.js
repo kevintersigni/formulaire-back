@@ -2,8 +2,8 @@ const express = require("express");
 const formidable = require("express-formidable");
 const cors = require("cors");
 
-var API_KEY = MAILGUN_API_KEY;
-var DOMAIN = MAILGUN_DOMAIN;
+var API_KEY = process.env.MAILGUN_API_KEY;
+var DOMAIN = process.env.MAILGUN_DOMAIN;
 var mailgun = require("mailgun-js")({ apiKey: API_KEY, domain: DOMAIN });
 
 const app = express();
