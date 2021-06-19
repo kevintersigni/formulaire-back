@@ -11,6 +11,8 @@ const app = express();
 app.use(formidable());
 app.use(cors());
 
+require("dotenv").config();
+
 app.get("/", (req, res) => {
   res.json({ message: "Bienvenue sur mon serveur dédié au formulaire" });
 });
